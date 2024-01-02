@@ -9,10 +9,8 @@ import java.util.Random;
  */
 public class OneOfEachStats {
 	public static void main (String[] args) {
-		// Gets the two command-line arguments
 		double T = Integer.parseInt(args[0]);
 		int seed = Integer.parseInt(args[1]);
-		// Initailizes a random numbers generator with the given seed value
         Random generator = new Random(seed);  
 		
 		int i = 0;
@@ -26,7 +24,7 @@ public class OneOfEachStats {
 	  {
 	    int x1 = ((int)(Math.random()*2));
 		int x2 = x1;
-		double sum = 0;
+		double sum = 1;
 
 		      while (x1==x2)
 		      {
