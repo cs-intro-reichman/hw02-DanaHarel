@@ -26,7 +26,7 @@ public class OneOfEachStats {
 	  {
 	    int x1 = ((int)(Math.random()*2));
 		int x2 = x1;
-		int sum = 1;
+		int sum = 0;
 
 		      while (x1==x2)
 		      {
@@ -46,6 +46,7 @@ public class OneOfEachStats {
 
 		}
           avg = (masterSum/T);
+
 
           System.out.println("Average: " + avg + " children to get at least on of each gender.");
           System.out.println("Number of families with 2 children: " + f2);
