@@ -10,13 +10,13 @@ import java.util.Random;
 public class OneOfEachStats {
 	public static void main (String[] args) {
 		// Gets the two command-line arguments
-		int T = Integer.parseInt(args[0]);
+		double T = Integer.parseInt(args[0]);
 		int seed = Integer.parseInt(args[1]);
 		// Initailizes a random numbers generator with the given seed value
         Random generator = new Random(seed);  
 		
 		int i = 0;
-		int masterSum = 0;
+		double masterSum = 0;
 		double avg = 0;
 		int f2 = 0;
 		int f3 = 0;
