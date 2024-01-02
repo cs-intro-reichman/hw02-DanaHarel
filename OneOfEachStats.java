@@ -22,13 +22,13 @@ public class OneOfEachStats {
 
 	while (i< T)
 	  {
-	    int x1 = ((int)(Math.random()*2));
+	    int x1 = (rand.nextint(2));
 		int x2 = x1;
 		double sum = 1;
 
 		      while (x1==x2)
 		      {
-		      	x2= ((int)(Math.random()*2));
+		      	x2= (rand.nextint(2));
 		      	sum ++;  	
 		      }
 
