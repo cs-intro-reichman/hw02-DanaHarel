@@ -10,7 +10,7 @@ public class OneOfEachStats1
 	{
 		int T = Integer.parseInt(args[0]);
 		int i = 0;
-		int masterSum = 0;
+		double masterSum = 0;
 		double avg = 0;
 		int f2 = 0;
 		int f3 = 0;
@@ -20,7 +20,7 @@ public class OneOfEachStats1
 	  {
 	    int x1 = ((int)(Math.random()*2));
 		int x2 = x1;
-		int sum = 1;
+		double sum = 1;
 
 		      while (x1==x2)
 		      {

@@ -26,7 +26,7 @@ public class OneOfEachStats {
 	  {
 	    int x1 = ((int)(Math.random()*2));
 		int x2 = x1;
-		int sum = 0;
+		double sum = 1;
 
 		      while (x1==x2)
 		      {
