@@ -11,14 +11,13 @@ public class OneOfEachStats {
 	public static void main (String[] args) {
 		double T = Integer.parseInt(args[0]);
 		int seed = Integer.parseInt(args[1]);
-        Random generator = new Random(seed);  
-		
 		int i = 0;
 		double masterSum = 0;
 		double avg = 0;
 		int f2 = 0;
 		int f3 = 0;
 		int f4 = 0;
+		Random generator = new Random(seed);  
 
 	while (i< T)
 	  {
