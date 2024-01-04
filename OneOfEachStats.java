@@ -9,7 +9,7 @@ import java.util.Random;
  */
 public class OneOfEachStats {
 	public static void main (String[] args) {
-		double T = Integer.parseInt(args[0]);
+		int T = Integer.parseInt(args[0]);
 		int seed = Integer.parseInt(args[1]);
 		int i = 0;
 		double masterSum = 0;
@@ -21,15 +21,20 @@ public class OneOfEachStats {
 
 	while (i< T)
 	  {
-	    int x1 = generator.nextInt(2);
-		int x2 = x1;
+	    int boy = 0;
+	    int girl = 0;
+		girl = boy;
 		double sum = 1;
 
-		      while (x1==x2)
+		      while ((girl<=0) || (boy <=0))
 		      {
-		      	x2= generator.nextInt(2);
-		      	sum ++;  	
-		      }
+		      	double x= generator.nextDouble();
+		      	if(x>0.5)
+		      		{girl++;}
+		      	else
+		      		{boy++;} 	
+		      } 
+		      sum = (boy + girl);
 
 		masterSum = (masterSum + sum);
 		if (sum == 2)
@@ -42,7 +47,7 @@ public class OneOfEachStats {
 		i++;
 
 		}
-          avg = (masterSum/T);
+          avg = ((double)masterSum / (double)T);
 
 
           System.out.println("Average: " + avg + " children to get at least on of each gender.");
